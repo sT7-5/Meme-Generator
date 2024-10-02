@@ -1,0 +1,32 @@
+#topHeader{
+    display: flex;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    padding:20px;
+}
+
+
+#rightHeaderText{
+    color: white;
+    font-weight: 600;
+}
+
+#leftHeader{
+
+    display: flex;
+    align-items: center;
+}
+
+
+#trollFace{
+    width:75px;
+    display: inline;
+    margin-right: 10px;
+}
+
+#memeTitle{
+    display: inline;
+    color:white;
+}

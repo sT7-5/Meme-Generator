@@ -1,0 +1,79 @@
+#theMainArea{
+    padding:30px;
+}
+
+#memeInputs{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap:50px
+    
+}
+
+#memeInputLeft, 
+#memeInputRight{
+    border: 1px solid;
+    border-radius: 8px;
+    text-indent: 10px;/*text indent from left within the box*/
+    font-size: 25px;
+
+}
+
+#memeInputLeft::placeholder,
+#memeInputRight::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+
+
+#getMemeButton{
+    /**the meme button is a column in the whole grid, this line makes this column go from start to end**/
+    grid-column: 1/-1;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    cursor: pointer;
+
+}
+
+
+#memeImg{
+    height: 400px;
+    width: 400px;
+    margin-left: 500px;
+}
+
+.memeArea{
+    position: relative;
+}
+
+.memeText {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 75%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    margin-top: -15px;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
